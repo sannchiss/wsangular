@@ -1,0 +1,330 @@
+<!-- general form elements -->
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Solicitud de Envio</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form [formGroup]="creacionEnvioForm">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3 pr-1">
+          <div class="form-group">
+            <label>NÚMERO DE ENVIO (disabled)</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="N° de Envio"
+              value=" "
+              formControlName="NUMERO_ENVIO"
+            />
+          </div>
+        </div>
+        <div class="col-md-3 px-1">
+          <div class="form-group">
+            <label>REFERENCIA</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="REFERENCIA /NUMERO DE SEGUIMIENTO"
+              formControlName="REFERENCIA"
+            />
+          </div>
+        </div>
+        <div class="col-md-3 pr-1">
+          <div class="form-group">
+            <label for="numero_bultos">NUMERO DE BULTOS</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="NUMERO_BULTOS"
+              formControlName="NUMERO_BULTOS"
+            />
+          </div>
+        </div>
+        <div class="col-md-3 pr-1">
+          <div class="form-group">
+            <label for="exampleInputEmail1">CODIGO DE ADMISIÓN</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="COD.ADMS"
+              formControlName="CODIGO_ADMISION"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 pr-1">
+          <div class="form-group">
+            <label>CLIENTE REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="N° Company"
+              formControlName="CLIENTE_REMITENTE"
+            />
+          </div>
+        </div>
+        <div class="col-md-3 pr-1">
+          <div class="form-group">
+            <label>CENTRO REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="CENTRO REMITENTE"
+              formControlName="CENTRO_REMITENTE"
+            />
+          </div>
+        </div>
+        <div class="col-md-2 pl-1">
+          <div class="form-group">
+            <label>NIF REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="NIF REMITENTE"
+              formControlName="NIF_REMITENTE"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label>NOMBRE DEL REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Home Address"
+              formControlName="NOMBRE_REMITENTE"
+            />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>DIRECCIÓN DEL REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="direccion"
+              formControlName="DIRECCION_REMITENTE"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 pr-1">
+          <div class="form-group">
+            <label>PAIS</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="pais"
+              formControlName="PAIS_REMITENTE"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 px-1">
+          <div class="form-group">
+            <label>CÓDIGO POSTAL</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="CODIGO POSTAL"
+              formControlName="CODIGO_POSTAL_REMITENTE"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 pl-1">
+          <div class="form-group">
+            <label>POBLACIÓN REMITENTE</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="POBLACIÓN REMITENTE"
+              formControlName="POBLACION_REMITENTE"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 pr-1">
+          <div class="form-group">
+            <label>PERSONA CONTACTO</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="PERSONA CONTACTO"
+              formControlName="PERSONA_CONTACTO_REMITENTE"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <hr />
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="title">Datos Destinatario</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>CLIENTE REFERENCIA</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CLIENTE REFERENCIA"
+                  formControlName="CLIENTE_REFERENCIA"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>NIF DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="NIF DESTINATARIO"
+                  formControlName="NIF_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>NOMBRE DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="NOMBRE DESTINATARIO"
+                  formControlName="NOMBRE_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>DIRECCION DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="DIRECCION DESTINATARIO"
+                  formControlName="DIRECCION_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>PAIS DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="PAIS DESTINATARIO"
+                  formControlName="PAIS_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>CODIGO POSTAL DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CÓDIGO POSTAL DESTINATARIO"
+                  formControlName="CODIGO_POSTAL_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>POBLACIÓN DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="POBLACIÓN DESTINATARIO"
+                  formControlName="POBLACION_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>PERSONA DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="PERSONA DESTINATARIO"
+                  formControlName="PERSONA_CONTACTO_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>TLF CONTAC. DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="PERSONA DESTINATARIO"
+                  formControlName="TELEFONO_CONTACTO_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>EMAIL DESTINATARIO</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="EMAIL DESTINATARIO"
+                  formControlName="EMAIL_DESTINATARIO"
+                />
+              </div>
+            </div>
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>KILOS</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="KILOS"
+                  formControlName="KILOS"
+                />
+              </div>
+            </div>
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>VOLUMEN</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="VOLUMEN"
+                  formControlName="VOLUMEN"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <button
+              type="button"
+              class="btn btn-success"
+              class="btn btn-primary"
+              (click)="creacionEnvio()"
+            >
+              Enviar Solicitud
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </form>
+</div>
+<!-- /.card -->
